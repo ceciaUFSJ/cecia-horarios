@@ -379,8 +379,9 @@ async function carregarHorarios() {
     a.name.localeCompare(b.name, "pt-BR", { sensitivity: "base" })
   );
 
-  pastas.forEach(async (pasta, index) => {
-    const aberta = index === 0; /* primeira pasta aberta */
+  pastas.forEach(async (pasta) => {
+  const aberta = false;
+    
 
     const box = document.createElement("div");
     box.className = "folder";
